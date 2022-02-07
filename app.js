@@ -12,11 +12,22 @@ console.log(wrapperLi);
 // Ciclo generazione numeri da 1 a 100
 for (numbers = 1; numbers < 101; numbers++){
 
-
+    
     // Creo una lista all'interno di ul wrapper
-    const lista = `<li class="square-${numbers} square_xs fw-bold bkg-turquoise">${numbers}</li>`;
-    wrapperLi.innerHTML += lista;
-    console.log(lista);
+    const listaLi = document.createElement("li");
+
+    // Aggiungo delle classi all'elemento li listaLi
+    listaLi.classList.add("square_xs", "bkg-turquoise");
+    console.dir(listaLi);
+
+    // Aggiungo all'interno di li il numero
+    listaLi.append(numbers);
+    console.log(listaLi);
+
+    // Aggiungo all'interno di ul wrapper, l'elemento listaLi
+    wrapperLi.append(listaLi);
+
+
 }
 
 
