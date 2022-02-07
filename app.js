@@ -23,10 +23,16 @@ for (numbers = 1; numbers < 101; numbers++){
     // Aggiungo all'interno di li il numero
     listaLi.append(numbers);
     console.log(listaLi);
-
+    
     // Aggiungo all'interno di ul wrapper, l'elemento listaLi
     wrapperLi.append(listaLi);
-
+    
+    // Se il numero è multiplo di 3
+    if(numbers % 3 === 0){
+        listaLi.classList.add("bkg-lime");
+        let numbers = "fizz"
+        listaLi.innerHTML = numbers;
+    }
 
 }
 
