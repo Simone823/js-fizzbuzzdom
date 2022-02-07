@@ -1,0 +1,19 @@
+.container-fluid{
+    background-color: #083b4c;
+}
+
+.wrapper{
+    gap: 40px;
+}
+
+.square_xs{
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.bkg-turquoise{
+    background-color: #1389b2;
+}
