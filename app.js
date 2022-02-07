@@ -1,3 +1,9 @@
+// Dichiaro una costante titolo e la stampo in html
+const titolo = "FizzBuzzDOM";
+console.log(titolo);
+
+document.querySelector(".titolo").innerHTML = titolo;
+
 
 // Dichiaro una variabile numbers con valore 1
 let numbers = 1;
