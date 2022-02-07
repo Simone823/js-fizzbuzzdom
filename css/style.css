@@ -2,6 +2,10 @@
     background-color: #083b4c;
 }
 
+.titolo{
+    font-size: 80px;
+}
+
 .wrapper{
     gap: 40px;
 }
