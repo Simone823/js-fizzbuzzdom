@@ -27,12 +27,17 @@ for (numbers = 1; numbers < 101; numbers++){
     // Aggiungo all'interno di ul wrapper, l'elemento listaLi
     wrapperLi.append(listaLi);
     
-    // Se il numero è multiplo di 3
+    // Se il numero è multiplo di 3 aggiungo il colore verde e cambio il messaggio stampato
     if(numbers % 3 === 0){
         listaLi.classList.add("bkg-lime");
-        let numbers = "fizz"
+        let numbers = "fizz";
         listaLi.innerHTML = numbers;
-    }
+    } // Se il numero è multiplo di 5 aggiungo il colore giallo e cambio il messaggio stampato
+      else if(numbers % 5 === 0){
+          listaLi.classList.add("bkg-yellow");
+          let numbers = "buzz";
+          listaLi.innerHTML= numbers;
+      }  
 
 }
 
