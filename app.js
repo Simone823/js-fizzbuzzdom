@@ -18,7 +18,6 @@ console.log(wrapperLi);
 // Ciclo generazione numeri da 1 a 100
 for (numbers = 1; numbers < 101; numbers++){
 
-    
     // Creo una lista all'interno di ul wrapper
     const listaLi = document.createElement("li");
 
@@ -32,18 +31,24 @@ for (numbers = 1; numbers < 101; numbers++){
     
     // Aggiungo all'interno di ul wrapper, l'elemento listaLi
     wrapperLi.append(listaLi);
+
     
-    // Se il numero è multiplo di 3 aggiungo il colore verde e cambio il messaggio stampato
-    if(numbers % 3 === 0){
+    // Se il numero è multiplo di 3 e di 5 aggiungo il colore rosso e cambio il messaggio stampato
+    if(numbers % 3 === 0 && numbers % 5 === 0){
+        listaLi.classList.add("bkg-red");
+        let numbers = "fizzbuzz";
+        listaLi.innerHTML = numbers;
+    }   // Se il numero è multiplo di 3 aggiungo il colore lime e cambio il messaggio stampato
+        else if(numbers % 3 === 0){
         listaLi.classList.add("bkg-lime");
         let numbers = "fizz";
-        listaLi.innerHTML = numbers;
-    } // Se il numero è multiplo di 5 aggiungo il colore giallo e cambio il messaggio stampato
-      else if(numbers % 5 === 0){
+        listaLi.innerHTML= numbers;
+    }   // Se il numero è multiplo di 5 aggiungo il colore giallo e cambio il messaggio stampato
+        else if(numbers % 5 === 0){
           listaLi.classList.add("bkg-yellow");
           let numbers = "buzz";
           listaLi.innerHTML= numbers;
-      }  
+    }  
 
 }
 
